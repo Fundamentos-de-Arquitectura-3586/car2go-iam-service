@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.car2go.car2go_iam_service.iam.domain.model.entities.Role;
+import com.car2go.car2go_iam_service.shared.domain.model.aggregates.AuditableAbstractAggregateRoot;
 
 /**
  * User aggregate root
