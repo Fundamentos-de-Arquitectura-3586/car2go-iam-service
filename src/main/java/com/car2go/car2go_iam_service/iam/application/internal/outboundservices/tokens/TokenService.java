@@ -12,6 +12,7 @@ public interface TokenService {
      * @return String the token
      */
     String generateToken(String username);
+    String generateToken(String username, Long userId);
 
     /**
      * Extract the username from a token

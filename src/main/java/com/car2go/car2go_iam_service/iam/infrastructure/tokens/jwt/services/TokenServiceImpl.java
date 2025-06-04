@@ -173,4 +173,9 @@ public class TokenServiceImpl implements BearerTokenService {
     private String getAuthorizationParameterFrom(HttpServletRequest request) {
         return request.getHeader(AUTHORIZATION_PARAMETER_NAME);
     }
+
+    @Override
+        public String generateToken(String username, Long userId) {
+            return buildTokenWithDefaultParameters(username, userId);
+        }
 }
